@@ -1,0 +1,642 @@
+
+*** Running vivado
+    with args -log example.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source example.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source example.tcl -notrace
+Command: synth_design -top example -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7436 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 992.090 ; gain = 235.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'example' [C:/InstantSOC/2/example.vhd:62]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/InstantSOC/2/example.vhd:289]
+INFO: [Synth 8-226] default block is never used [C:/InstantSOC/2/example.vhd:669]
+INFO: [Synth 8-226] default block is never used [C:/InstantSOC/2/example.vhd:717]
+WARNING: [Synth 8-6014] Unused sequential element n162_reg was removed.  [C:/InstantSOC/2/example.vhd:464]
+WARNING: [Synth 8-6014] Unused sequential element n173_reg was removed.  [C:/InstantSOC/2/example.vhd:544]
+WARNING: [Synth 8-6014] Unused sequential element n174_reg was removed.  [C:/InstantSOC/2/example.vhd:545]
+WARNING: [Synth 8-6014] Unused sequential element n189_reg was removed.  [C:/InstantSOC/2/example.vhd:598]
+WARNING: [Synth 8-6014] Unused sequential element n194_reg was removed.  [C:/InstantSOC/2/example.vhd:643]
+WARNING: [Synth 8-6014] Unused sequential element n76_reg was removed.  [C:/InstantSOC/2/example.vhd:1230]
+WARNING: [Synth 8-6014] Unused sequential element n245_reg was removed.  [C:/InstantSOC/2/example.vhd:1234]
+WARNING: [Synth 8-6014] Unused sequential element n246_reg was removed.  [C:/InstantSOC/2/example.vhd:1269]
+WARNING: [Synth 8-6014] Unused sequential element n254_reg was removed.  [C:/InstantSOC/2/example.vhd:1270]
+WARNING: [Synth 8-6014] Unused sequential element n252_reg was removed.  [C:/InstantSOC/2/example.vhd:1271]
+WARNING: [Synth 8-6014] Unused sequential element n248_reg was removed.  [C:/InstantSOC/2/example.vhd:1272]
+WARNING: [Synth 8-6014] Unused sequential element n249_reg was removed.  [C:/InstantSOC/2/example.vhd:1273]
+WARNING: [Synth 8-6014] Unused sequential element n55_reg was removed.  [C:/InstantSOC/2/example.vhd:1274]
+WARNING: [Synth 8-6014] Unused sequential element n13_reg was removed.  [C:/InstantSOC/2/example.vhd:1386]
+INFO: [Synth 8-4471] merging register 'n257_reg[31:0]' into 'n251_reg[31:0]' [C:/InstantSOC/2/example.vhd:1309]
+WARNING: [Synth 8-6014] Unused sequential element n257_reg was removed.  [C:/InstantSOC/2/example.vhd:1309]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n247_reg' and it is trimmed from '2' to '1' bits. [C:/InstantSOC/2/example.vhd:1281]
+INFO: [Synth 8-4471] merging register 'n125_reg' into 'n124_reg' [C:/InstantSOC/2/example.vhd:914]
+INFO: [Synth 8-4471] merging register 'n100_reg' into 'n99_reg' [C:/InstantSOC/2/example.vhd:998]
+INFO: [Synth 8-4471] merging register 'n152_reg' into 'n151_reg' [C:/InstantSOC/2/example.vhd:1079]
+WARNING: [Synth 8-6014] Unused sequential element n125_reg was removed.  [C:/InstantSOC/2/example.vhd:914]
+WARNING: [Synth 8-6014] Unused sequential element n100_reg was removed.  [C:/InstantSOC/2/example.vhd:998]
+WARNING: [Synth 8-6014] Unused sequential element n152_reg was removed.  [C:/InstantSOC/2/example.vhd:1079]
+INFO: [Synth 8-256] done synthesizing module 'example' (1#1) [C:/InstantSOC/2/example.vhd:62]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1067.289 ; gain = 310.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1067.289 ; gain = 310.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1067.289 ; gain = 310.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1067.289 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Download/nexys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [D:/Download/nexys.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Download/nexys.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Download/nexys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Download/nexys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/example_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/example_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1186.063 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1186.063 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1186.063 ; gain = 429.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1186.063 ; gain = 429.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1186.063 ; gain = 429.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'accel_SSn_reg' into 'n78_reg' [C:/InstantSOC/2/example.vhd:866]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/InstantSOC/2/example.vhd:514]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <unary minus> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/InstantSOC/2/example.vhd:629]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/InstantSOC/2/example.vhd:1300]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n15_reg' and it is trimmed from '32' to '15' bits. [C:/InstantSOC/2/example.vhd:1299]
+INFO: [Synth 8-5546] ROM "n255" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "n255" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "n67" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'n183_reg' in module 'example'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    n178 |                              000 |                              000
+                    n179 |                              001 |                              001
+                    n180 |                              010 |                              010
+                    n181 |                              011 |                              011
+                    n182 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'n183_reg' using encoding 'sequential' in module 'example'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1186.063 ; gain = 429.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 4     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	               31 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 19    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 34    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	              256 Bit         RAMs := 1     
+	               64 Bit         RAMs := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   5 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 34    
+	   4 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 44    
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 46    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module example 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 4     
+	   3 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	               31 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 19    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 34    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	              256 Bit         RAMs := 1     
+	               64 Bit         RAMs := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   5 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 34    
+	   4 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 44    
+	   4 Input      8 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 9     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 46    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 6     
+	  10 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "n255" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/InstantSOC/2/example.vhd:543]
+DSP Report: Generating DSP n1750, operation Mode is: A2*B2.
+DSP Report: register n50_reg is absorbed into DSP n1750.
+DSP Report: register n1750 is absorbed into DSP n1750.
+DSP Report: operator n1750 is absorbed into DSP n1750.
+DSP Report: operator n1750 is absorbed into DSP n1750.
+DSP Report: Generating DSP n175_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register n51_reg is absorbed into DSP n175_reg.
+DSP Report: register n50_reg is absorbed into DSP n175_reg.
+DSP Report: register n175_reg is absorbed into DSP n175_reg.
+DSP Report: operator n1750 is absorbed into DSP n175_reg.
+DSP Report: operator n1750 is absorbed into DSP n175_reg.
+DSP Report: Generating DSP n1750, operation Mode is: A2*B2.
+DSP Report: register n1750 is absorbed into DSP n1750.
+DSP Report: register n1750 is absorbed into DSP n1750.
+DSP Report: operator n1750 is absorbed into DSP n1750.
+DSP Report: operator n1750 is absorbed into DSP n1750.
+DSP Report: Generating DSP n175_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register n51_reg is absorbed into DSP n175_reg.
+DSP Report: register n175_reg is absorbed into DSP n175_reg.
+DSP Report: register n175_reg is absorbed into DSP n175_reg.
+DSP Report: operator n1750 is absorbed into DSP n175_reg.
+DSP Report: operator n1750 is absorbed into DSP n175_reg.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (n208_reg)
+INFO: [Synth 8-3886] merging instance 'n209_reg[7]' (FDE) to 'accel_MOSI_reg'
+INFO: [Synth 8-3886] merging instance 'n14_reg[1]' (FD) to 'n14_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (n175_reg[47]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[46]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[45]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[44]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[43]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[42]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[41]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[40]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[39]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[38]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[37]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[36]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[35]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[34]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[33]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[32]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[31]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[30]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[29]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[28]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[27]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[26]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[25]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[24]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[23]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[22]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[21]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[20]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[19]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[18]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[17]) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[47]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[46]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[45]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[44]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[43]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[42]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[41]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[40]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[39]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[38]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[37]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[36]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[35]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[34]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[33]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[32]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[31]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[30]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[29]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[28]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[27]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[26]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[25]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[24]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[23]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[22]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[21]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[20]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[19]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[18]__0) is unused and will be removed from module example.
+WARNING: [Synth 8-3332] Sequential element (n175_reg[17]__0) is unused and will be removed from module example.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\n247_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1186.063 ; gain = 429.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|example     | n258_reg   | 4096x31       | Block RAM      | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|example     | n7_reg     | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+------------+----------------+----------------------+--------------+
+|Module Name | RTL Object | Inference      | Size (Depth x Width) | Primitives   | 
++------------+------------+----------------+----------------------+--------------+
+|example     | n82_reg    | Implied        | 8 x 8                | RAM32M x 2	  | 
+|example     | n9_reg     | User Attribute | 32 x 32              | RAM32M x 12	 | 
+|example     | n107_reg   | Implied        | 8 x 8                | RAM32M x 2	  | 
+|example     | n134_reg   | Implied        | 32 x 8               | RAM32M x 2	  | 
++------------+------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|example     | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|example     | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|example     | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|example     | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1214.688 ; gain = 457.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1368.941 ; gain = 612.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|example     | n7_reg     | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++------------+------------+----------------+----------------------+--------------+
+|Module Name | RTL Object | Inference      | Size (Depth x Width) | Primitives   | 
++------------+------------+----------------+----------------------+--------------+
+|example     | n82_reg    | Implied        | 8 x 8                | RAM32M x 2	  | 
+|example     | n9_reg     | User Attribute | 32 x 32              | RAM32M x 12	 | 
+|example     | n107_reg   | Implied        | 8 x 8                | RAM32M x 2	  | 
+|example     | n134_reg   | Implied        | 32 x 8               | RAM32M x 2	  | 
++------------+------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance n7_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |CARRY4      |   107|
+|3     |DSP48E1     |     2|
+|4     |DSP48E1_1   |     2|
+|5     |LUT1        |    87|
+|6     |LUT2        |   189|
+|7     |LUT3        |   208|
+|8     |LUT4        |   177|
+|9     |LUT5        |   434|
+|10    |LUT6        |   495|
+|11    |MUXF7       |     1|
+|12    |RAM32M      |    18|
+|13    |RAMB36E1    |     1|
+|14    |RAMB36E1_10 |     1|
+|15    |RAMB36E1_11 |     1|
+|16    |RAMB36E1_12 |     1|
+|17    |RAMB36E1_9  |     1|
+|18    |FDRE        |   706|
+|19    |FDSE        |    10|
+|20    |IBUF        |     3|
+|21    |OBUF        |    36|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2481|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1369.949 ; gain = 613.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 1369.949 ; gain = 494.473
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1369.949 ; gain = 613.246
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1369.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 135 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'example' is not ideal for floorplanning, since the cellview 'example' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1369.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 84 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1369.949 ; gain = 918.383
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1369.949 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Benjamin Race/vivadorepos/project_2/project_2.runs/synth_1/example.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file example_utilization_synth.rpt -pb example_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 14:55:56 2020...

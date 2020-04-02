@@ -1,0 +1,113 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Thu Apr  2 14:57:10 2020
+| Host         : SOFTCORE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file example_control_sets_placed.rpt
+| Design       : example
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    35 |
+|    Minimum number of control sets                        |    35 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    75 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    35 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     4 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    13 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             318 |           99 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              80 |           35 |
+| Yes          | No                    | No                     |             184 |           62 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             151 |           59 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------+------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+----------------------------+------------------+------------------+----------------+
+|  Clk_IBUF_BUFG | uart_tx_i_1_n_0            | n145_i_1_n_0     |                1 |              1 |
+|  Clk_IBUF_BUFG | n184                       |                  |                2 |              4 |
+|  Clk_IBUF_BUFG | n1080                      | n124_reg__0      |                2 |              4 |
+|  Clk_IBUF_BUFG | n1121                      | n124_reg__0      |                2 |              4 |
+|  Clk_IBUF_BUFG | n75                        | n240[6]_i_1_n_0  |                1 |              4 |
+|  Clk_IBUF_BUFG | n830                       | n99_reg__0       |                2 |              4 |
+|  Clk_IBUF_BUFG |                            | n99_reg__0       |                2 |              5 |
+|  Clk_IBUF_BUFG | n136[4]_i_1_n_0            |                  |                2 |              5 |
+|  Clk_IBUF_BUFG | n161[5]_i_2_n_0            | n161[5]_i_1_n_0  |                2 |              6 |
+|  Clk_IBUF_BUFG | n1391                      | n151_reg__0      |                2 |              6 |
+|  Clk_IBUF_BUFG | n1350                      | n151_reg__0      |                2 |              6 |
+|  Clk_IBUF_BUFG | n161[6]__0_i_1_n_0         |                  |                2 |              7 |
+|  Clk_IBUF_BUFG |                            | n124_reg0        |                1 |              8 |
+|  Clk_IBUF_BUFG |                            | n99_reg0         |                1 |              8 |
+|  Clk_IBUF_BUFG | n140[7]_i_1_n_0            |                  |                4 |              8 |
+|  Clk_IBUF_BUFG | n113[7]_i_1_n_0            |                  |                2 |              8 |
+|  Clk_IBUF_BUFG | n88[7]_i_1_n_0             |                  |                2 |              8 |
+|  Clk_IBUF_BUFG | s7_seg0                    |                  |                3 |              8 |
+|  Clk_IBUF_BUFG |                            | n161[9]_i_1_n_0  |                3 |             10 |
+|  Clk_IBUF_BUFG | n205[3]_i_1_n_0            |                  |                3 |             11 |
+|  Clk_IBUF_BUFG | n161[5]_i_2_n_0            |                  |                4 |             12 |
+|  Clk_IBUF_BUFG | n58                        |                  |                4 |             14 |
+|  Clk_IBUF_BUFG | n108                       |                  |                2 |             16 |
+|  Clk_IBUF_BUFG | n83                        |                  |                2 |             16 |
+|  Clk_IBUF_BUFG | n135                       |                  |                2 |             16 |
+|  Clk_IBUF_BUFG | LED0                       | n11              |                8 |             16 |
+|  Clk_IBUF_BUFG | n243[31]_i_1_n_0           | n11              |               15 |             32 |
+|  Clk_IBUF_BUFG | n48                        |                  |               13 |             32 |
+|  Clk_IBUF_BUFG | n158145_out                | n11              |               14 |             32 |
+|  Clk_IBUF_BUFG | n190                       |                  |                8 |             32 |
+|  Clk_IBUF_BUFG | n192                       |                  |               13 |             35 |
+|  Clk_IBUF_BUFG | n192                       | n193[0]_i_1_n_0  |                8 |             36 |
+|  Clk_IBUF_BUFG |                            | n11              |               28 |             49 |
+|  Clk_IBUF_BUFG | n9_reg_r1_0_31_0_5_i_1_n_0 |                  |               12 |             96 |
+|  Clk_IBUF_BUFG |                            |                  |               99 |            318 |
++----------------+----------------------------+------------------+------------------+----------------+
+
+
