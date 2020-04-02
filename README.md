@@ -13,6 +13,6 @@ See original post at : https://forum.digilentinc.com/topic/18420-risc-v-on-nexys
 Files explained:
 
 project2 folder: Vivado repo folder.
-Instant SOC folder: cpp files and vhd files after generation.
+2 folder: cpp files and vhd files after generation.
 
 See Instant SOC here : https://www.fpga-cores.com/instant-soc/
